@@ -11,5 +11,7 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Ensure project root is importable
+        run: echo "PYTHONPATH=${{ github.workspace }}" >> $GITHUB_ENV
       - name: Run tests
         run: pytest -q
