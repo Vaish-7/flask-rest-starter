@@ -16,5 +16,5 @@ Run: `docker run -p 8000:8000 flask-rest-starter`
 `pytest -q`
 
 ## Notes
-- This starter uses a demo auth and simple DB setup. Replace demo auth with real user management and add migrations (Alembic) for production.
-- Do not commit secrets. Use GitHub Secrets for CI.
+- This starter uses a demo auth and simple DB setup.
+
